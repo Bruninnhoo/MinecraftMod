@@ -1,4 +1,24 @@
 {
   "item.brunomod.example_item": "Example Item",
-  "itemGroup.brunomod": "BrunoMod Tab"
+  "itemGroup.brunomod": "BrunoMod Tab",
+
+  "screen.brunomod.traits_title": "Escolha seus Traços",
+
+  "trait.brunomod.fumante": "Fumante",
+  "trait.brunomod.fumante.desc": "Você precisa fumar para aliviar o estresse",
+
+  "trait.brunomod.asmatico": "Asmático",
+  "trait.brunomod.asmatico.desc": "Você perde folego mais rápido",
+
+  "trait.brunomod.sedentario": "Sedentário",
+  "trait.brunomod.sedentario.desc": "Você cansa muito mais rápido",
+
+  "trait.brunomod.robusto": "Robusto",
+  "trait.brunomod.robusto.desc": "Resiste a empurrões e tem mais vida",
+
+  "trait.brunomod.corredor": "Corredor",
+  "trait.brunomod.corredor.desc": "Você corre mais rápido",
+
+  "trait.brunomod.sortudo": "Sortudo",
+  "trait.brunomod.sortudo.desc": "Encontra itens melhores em baús"
 }

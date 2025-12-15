@@ -1,6 +1,7 @@
 package com.bruno.brunomod.network;
 
 import com.bruno.brunomod.network.packet.PacketOpenTraitScreen;
+import com.bruno.brunomod.network.packet.PacketSendTraits;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkDirection;
@@ -30,6 +31,14 @@ public class PacketHandler {
                 .encoder(PacketOpenTraitScreen::toBytes)
                 .consumer((packet, contextSupplier) -> {
                     packet.handle(contextSupplier);
+                })
+                .add();
+
+        INSTANCE.messageBuilder(PacketSendTraits.class, id(), NetworkDirection.PLAY_TO_SERVER)
+                .decoder(PacketSendTraits::new)
+                .encoder(PacketSendTraits::toBytes)
+                .consumer((packet, context) -> {
+                    packet.handle(context);
                 })
                 .add();
     }

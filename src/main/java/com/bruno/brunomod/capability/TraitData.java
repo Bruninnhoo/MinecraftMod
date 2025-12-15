@@ -13,6 +13,16 @@ public class TraitData implements ITraitData{
     private boolean selected = false;
     private List<Trait> activeTraits = new ArrayList<>();
 
+    public void setTraits(List<Trait> traits) {
+        this.activeTraits.clear();
+        this.activeTraits.addAll(traits);
+        this.selected = true;
+    }
+
+    public List<Trait> getTraits() {
+        return this.activeTraits;
+    }
+
     public void saveNBT(CompoundTag nbt) {
         nbt.putBoolean("isTraitsSelected", this.selected);
 
