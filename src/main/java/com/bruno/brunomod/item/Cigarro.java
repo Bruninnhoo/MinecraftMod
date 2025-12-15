@@ -7,10 +7,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class ExampleItem extends Item {
+public class Cigarro extends Item {
 
 
-    public ExampleItem(Properties properties) {
+    public Cigarro(Properties properties) {
         super(properties);
     }
 

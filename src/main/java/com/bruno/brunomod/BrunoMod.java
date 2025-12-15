@@ -27,7 +27,7 @@ public class BrunoMod
         @Override
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-            return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
+            return new ItemStack(ItemInit.CIGARRO.get());
         }
     };
 
